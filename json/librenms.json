@@ -1,0 +1,39 @@
+{
+    "name": "LibreNMS",
+    "slug": "librenms",
+    "categories": [
+      9
+    ],
+    "date_created": "2025-01-24",
+    "type": "ct",
+    "updateable": false,
+    "privileged": false,
+    "interface_port": 80,
+    "documentation": "https://docs.librenms.org",
+    "website": "https://www.librenms.org",
+    "logo": "https://raw.githubusercontent.com/librenms/librenms/33dbd98d7302091fdadcdbd66fec9d38808d82ce/html/images/librenms_logo_dark.svg",
+    "description": "LibreNMS, a fully featured network monitoring system that provides a wealth of features and device support.",
+    "install_methods": [
+      {
+        "type": "default",
+        "script": "ct/librenms.sh",
+        "resources": {
+          "cpu": 2,
+          "ram": 2048,
+          "hdd": 4,
+          "os": "debian",
+          "version": "12"
+        }
+      }
+    ],
+    "default_credentials": {
+      "username": null,
+      "password": null
+    },
+    "notes": [
+      {
+          "text": "After install you can follow the web installer to complete the install.",
+          "type": "info"
+      }
+  ]
+}

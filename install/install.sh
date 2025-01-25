@@ -65,10 +65,10 @@ for i in "${!FILES[@]}"; do
 done
 
 # Nadawanie uprawnień wykonywania dla skryptu instalacyjnego
-pct exec $CTID -- chmod +x /install/librenms-install.sh
+pct exec $CTID -- chmod +x /cp/librenms.sh
 
 # Uruchamianie skryptu instalacyjnego
-pct exec $CTID -- /install/librenms-install.sh
+pct exec $CTID -- /cp/librenms.sh
 
 # Wyświetlanie wyniku
 echo "LibreNMS został pomyślnie zainstalowany i jest dostępny pod adresem http://$IP"
